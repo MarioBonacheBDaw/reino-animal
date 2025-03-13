@@ -1,4 +1,4 @@
-package paqAnimales;
+package es.iesjoseplanes.ed1dawdist.tarea4;
 
 public class Principal {
 
@@ -16,25 +16,25 @@ Esquema de clases de reino-animal
 */
 
 
-        Animal ani = new Animal();
+        Animal animal = new Animal("Ramona");
 
-        Mamifero mami = new Mamifero();
+        Mamifero mamifero = new Mamifero("Gofy");
 
-        Perro toby = new Perro();
+        Perro toby = new Perro("Coco");
 
-        Gato isidoro = new Gato();
-        isidoro.pelos = 4;
+        Gato isidoro = new Gato("Isidoro");
+        isidoro.setPelos(4);
 
-        ani = isidoro;
+        animal = isidoro;
 
         Gato g;
-        g = (Gato) ani;
-        System.out.println("pelos de gato: " + g.pelos);
+        g = (Gato) animal;
+        System.out.println("pelos de gato: " + g.getPelos());
 
         Animal array[] = new Animal[4];
 
-        array[0] = ani;
-        array[1] = mami;
+        array[0] = animal;
+        array[1] = mamifero;
         array[2] = toby;
         array[3] = isidoro;
 
@@ -53,6 +53,13 @@ Esquema de clases de reino-animal
                 anigato.maullar();
             }
         }
+        
+        
+        System.out.println("____________MOD PARA 2.7__________");
+        System.out.println("Animal:     "+animal.getNombre());
+        System.out.println("Mamifero:   "+mamifero.getNombre());
+        System.out.println("Perro:  "+toby.getNombre());
+        System.out.println("Gato:   "+isidoro.getNombre());
 
     }
 }
