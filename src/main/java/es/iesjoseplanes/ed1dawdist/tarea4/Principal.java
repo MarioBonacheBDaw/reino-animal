@@ -4,6 +4,10 @@ public class Principal {
 
     public static void main(String[] args) {
 
+/**
+    * @author Mario
+     
+        
 /*
 Esquema de clases de reino-animal        
                   Animal
@@ -47,7 +51,7 @@ Esquema de clases de reino-animal
             }
 
             if (array[i] instanceof Gato) {
-                System.out.println("El objeto " + i + " es un gato");
+                System.out.println("El objeto " + i + "  es un gato");
 
                 Gato anigato = (Gato) array[i];
                 anigato.maullar();
